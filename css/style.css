@@ -34,3 +34,18 @@ header .menu .white-paper a{
     padding: 3px 5px;
     border: 1px solid white;
 }
+
+main .main-cover{
+    background: linear-gradient(#003BE2, #00A8FC);
+}
+main .main-cover .canc{
+    background-image: url(../assets/images/canc.png);
+    background-size: cover;
+}
+main .main-cover .canc .home{
+    background-image: url(../assets/images/tun.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1000px;
+}
