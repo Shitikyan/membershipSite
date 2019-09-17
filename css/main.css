@@ -1,0 +1,36 @@
+.grid{
+    display: flex;
+}
+.grid-jus-center{
+    justify-content: center;
+}
+.grid-jus-start{
+    justify-content: flex-start;
+}
+.grid-jus-end{
+    justify-content: flex-end;
+}
+.grid-jus-around{
+    justify-content: space-around;
+}
+.grid-jus-between{
+    justify-content: space-between;
+}
+.grid-al-center{
+    align-items: center;
+}
+.grid-al-start{
+    align-items: flex-start;
+}
+.grid-al-end{
+    align-items: flex-end;
+}
+.grid-dir-column{
+    flex-direction: column;
+}
+.grid-wrap{
+    flex-wrap: wrap;
+}
+.grid>.grid-cell{
+    flex-grow: 1;
+}
