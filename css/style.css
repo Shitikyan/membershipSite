@@ -24,7 +24,8 @@ header .logo{
     background-size: contain;
 }
 header .menu {
-    width: 1200px;
+    max-width: 1100px;
+    flex-grow: 1;
 }
 header .menu  li{
     list-style-type: none;
@@ -88,7 +89,7 @@ main .main-cover .home{
     background-position: center;
 }
 .container{
-    width: 1200px;
+    width: 1100px;
     margin: 0 auto;
     padding: 40px 0;
 }
@@ -102,7 +103,7 @@ main .main-cover .container{
     height: 83vw;
 }
 main .main-cover .container .cover-text .divider{
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
 }
 main .main-cover .container .cover-text .text{
@@ -198,4 +199,47 @@ main .membership-container .footer .airdrops-img{
 }
 main .membership-container .footer .airdrops-img:hover{
     background-image: url(../assets/images/airdrops_hover.png);
+}
+
+
+.timer{
+    width: 350px;
+    position: fixed;
+    z-index: 10;
+    top: 150px;
+    right: 0;
+    color: white;
+}
+.timer .wrapper{
+    background-color: rgba(255,255,255,0.25);
+    padding: 20px 30px;
+}
+.timer .footer{
+    background-color: rgba(17,44,101, 0.3);
+    padding: 0;
+    font-size: 50px;
+    text-align: center;
+}
+.timer .title{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+    color: 193,203,233;
+}
+.timer .wrapper .content{
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 700;
+}
+.timer .wrapper .content .num{
+    font-size: 40px;
+    border-bottom: 1px solid white;
+    margin-bottom: 6px;
+}
+.timer .wrapper .content .dot{
+    font-size: 40px;
+}
+.timer .wrapper .content .item{
+    min-width: 50px;
+    font-size: 12px;
 }
