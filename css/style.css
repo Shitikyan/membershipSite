@@ -95,15 +95,19 @@ header .lang select option{
     color: black;
 }
 
-/* main::before{
+main::before{
     margin-top:120px; 
-    content: url(../assets/images/canc.png);
-    z-index:-1;
+    /* content: url(../assets/images/canc.png); */
+    content: '';
+    background-image: url(../assets/images/canc.png);
+    width: 98vw;
+    height: 100%;
+    z-index:10;
     position:absolute;
     left:0;
     top:0;
     opacity:0.2;
-} */
+}
 
 main{
     padding-top: 120px;
@@ -218,6 +222,10 @@ main .context .item:nth-child(even){
 }
 main .context .context-title{
     background-color: transparent;
+    padding: 10px 0 10px 90px;
+    margin: 10px 0;
+    color: white;
+    font-size: 18px;
 }
 main .context .sub-item{
     margin: 30px 90px;
