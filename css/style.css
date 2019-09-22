@@ -47,31 +47,42 @@ header .menu  li a{
     text-decoration: none;
     font-size: 15px;
     color: #3f4e9c;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
     opacity: 0.9;
     transition: 0.2s;
     padding: 4px 0;
 }
 header .menu  li a:hover{
-    border-bottom: 1px solid white;
+    border-bottom: 3px solid #ab39c4;
     opacity: 1;
-    text-shadow: 1px 1px 3px  white;
+    /* text-shadow: 1px 1px 2px  #ab39c4; */
 }
-header .lang .white-paper a{
+header .lang .but a{
     padding: 4px 5px;
-    border: 1px solid white;
+    
     border-radius: 3px;
-    color: white;
     text-decoration: none;
-    margin-right: 40px;
+    margin-right: 50px;
+    font-weight: 700;
+}
+header .lang  .white-paper a{
+    color: white;
+    border: 1px solid white;
+}
+header .lang  .kyc-white a{
+    color: #3f4e9c;
+    border: 1px solid #3f4e9c;
 }
 header .lang .white-paper a:hover{
     box-shadow: 1px 1px 7px 2px rgba(255,255,255,0.4);
 }
-header .lang{
-    width: 200px;
+header .lang .kyc-white a:hover{
+    box-shadow: 1px 1px 7px 2px rgba(0,0,0,0.4);
 }
+/* header .lang{
+    width: 200px;
+} */
 header .lang select{
     border: none;
     outline: none;
@@ -84,13 +95,7 @@ header .lang select option{
     color: black;
 }
 
-body{
-    background: linear-gradient(#003BE2 , #00B1E0 , #003BE2 );
-    /* Test */
-    height: 8000px;
-}
-
-main::before{
+/* main::before{
     margin-top:120px; 
     content: url(../assets/images/canc.png);
     z-index:-1;
@@ -98,15 +103,22 @@ main::before{
     left:0;
     top:0;
     opacity:0.2;
-}
+} */
 
 main{
     padding-top: 120px;
+    background: linear-gradient(#003BE2 , #00B1E0 , #003BE2 );
+    
+}
+main .canc{
+    /* background-image: url(../assets/images/canc.png); */
+    /* opacity: 0.2; */
 }
 main .main-cover .home{
-    background-size: 100% auto;
+    background-image: url(../assets/images/home.png);
+    background-size: 80% auto;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
 }
 .container{
     height: 100%;
@@ -121,7 +133,7 @@ main .main-cover .home{
 main .main-cover .container{
     background-color: rgba(255,255,255,0.25);
     padding-top: 40px;
-    height: 83vw;
+    height: 60vw;
 }
 main .main-cover .container .cover-text .text{
     color: white;
@@ -134,7 +146,7 @@ main .main-cover .container .cover-text .text p{
 main .main-cover .container .cover-text .text .blue{
     color: #3c5a96;
 }
-main .main-cover .container .cover-footer{
+/* main .main-cover .container .cover-footer{
     color: white;
 }
 main .main-cover .container .cover-footer .context{
@@ -167,7 +179,7 @@ main .main-cover .container .cover-footer .present button{
 main .main-cover .container .cover-footer .present button:hover{
     background-color: #B9EBFF;
     color: #0093E2;
-}
+} */
 main .container{
     background-color: rgba(3,71,209,0.25);
 }
@@ -192,10 +204,17 @@ main .context{
     padding: 30px 0;
 }
 main .context .item{
-    padding: 10px 90px;
+    padding: 10px 0 10px 90px;
     margin: 10px 0;
     color: white;
     font-size: 18px;
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+
+}
+main .context .item:nth-child(even){
+    width: calc(100% - 90px);
+    margin-left: 90px;
+    padding-left: 0;
 }
 main .context .context-title{
     background-color: transparent;
@@ -222,7 +241,7 @@ main .footer .airdrops-img:hover{
 
 
 .timer{
-    width: 350px;
+    width: 360px;
     position: fixed;
     z-index: 10;
     top: 150px;
@@ -230,17 +249,21 @@ main .footer .airdrops-img:hover{
     color: white;
 }
 .timer .wrapper{
-    background-color: rgba(255,255,255,0.25);
+    background-color: rgba(255,255,255,0.4);
     padding: 20px 30px;
 }
 .timer .footer{
     background-color: rgba(17,44,101, 0.3);
-    padding: 0;
+    padding: 2px;
     font-size: 50px;
     text-align: center;
 }
+.timer .footer img{
+    width: 30px;
+    color: white;
+}
 .timer .title{
-    font-size: 15px;
+    font-size: 14px;
     text-align: center;
     font-weight: 600;
     color: 193,203,233;
@@ -254,9 +277,14 @@ main .footer .airdrops-img:hover{
     font-size: 40px;
     border-bottom: 1px solid white;
     margin-bottom: 6px;
+    color: #4414B9;
+    font-weight: 800;
+    text-shadow: 0px 0px 25px white;
 }
 .timer .wrapper .content .dot{
     font-size: 40px;
+    color: #4414B9;
+    font-weight: 800;
 }
 .timer .wrapper .content .item{
     min-width: 50px;
