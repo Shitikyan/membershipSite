@@ -85,19 +85,31 @@ header .lang select option{
 }
 
 body{
-    background: linear-gradient(#003BE2 6%, #00A8FC 53%, #003BE2 100%);
+    background: linear-gradient(#003BE2 , #00B1E0 , #003BE2 );
+    /* Test */
+    height: 8000px;
+}
+
+main::before{
+    margin-top:120px; 
+    content: url(../assets/images/canc.png);
+    z-index:-1;
+    position:absolute;
+    left:0;
+    top:0;
+    opacity:0.2;
 }
 
 main{
     padding-top: 120px;
 }
 main .main-cover .home{
-    background-image: url(../assets/images/home.png);
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
 }
 .container{
+    height: 100%;
     width: 1100px;
     margin: 0 auto;
     padding: 40px 0;
@@ -111,14 +123,10 @@ main .main-cover .container{
     padding-top: 40px;
     height: 83vw;
 }
-main .main-cover .container .cover-text .divider{
-    width: 95%;
-    margin: 0 auto;
-}
 main .main-cover .container .cover-text .text{
     color: white;
-    padding: 20px 0;
     font-size: 19px;
+    margin-right: 35px;
 }
 main .main-cover .container .cover-text .text p{
     margin: 5px 0;
@@ -160,41 +168,47 @@ main .main-cover .container .cover-footer .present button:hover{
     background-color: #B9EBFF;
     color: #0093E2;
 }
-main .membership-container .container{
-    background-color: rgba(255,255,255,0.25);
+main .container{
+    background-color: rgba(3,71,209,0.25);
 }
-main .membership-container .head .title{
+main .head .title{
+
+    padding: 0 30px;
+    white-space: nowrap;
     font-size: 30px;
-    color: white;
-    width: 100%;
     text-align: center;
+    text-shadow: 0px 0px 4px #27d1f5 ;
 }
 main .membership-container .head .line{
     width: 100%;
+    border-top: 1px solid #27d1f5;
+}
+.line{
+    width: 100%;
     border-top: 1px solid white;
 }
-main .membership-container .context{
+
+main .context{
     padding: 30px 0;
 }
-main .membership-container .context .item{
+main .context .item{
     padding: 10px 90px;
-    background-color: rgba(0,0,0,0.1);
     margin: 10px 0;
     color: white;
     font-size: 18px;
 }
-main .membership-container .context .context-title{
+main .context .context-title{
     background-color: transparent;
 }
-main .membership-container .context .sub-item{
+main .context .sub-item{
     margin: 30px 90px;
     font-size: 15px;
     color: white;
 }
-main .membership-container .footer{
+main .footer{
     padding: 20px 0;
 }
-main .membership-container .footer .airdrops-img{
+main .footer .airdrops-img{
     width: 300px;
     height: 100px;
     background-image: url(../assets/images/airdrops.png);
@@ -202,7 +216,7 @@ main .membership-container .footer .airdrops-img{
     background-repeat: no-repeat;
     background-position: center;
 }
-main .membership-container .footer .airdrops-img:hover{
+main .footer .airdrops-img:hover{
     background-image: url(../assets/images/airdrops_hover.png);
 }
 
@@ -247,4 +261,16 @@ main .membership-container .footer .airdrops-img:hover{
 .timer .wrapper .content .item{
     min-width: 50px;
     font-size: 12px;
+}
+.light-blue{
+    color: #27d1f5;
+}
+.white{
+    color: white;
+}
+main .baunties-container{
+    height: 800px;
+}
+main .roadmap-container{
+    height: 800px;
 }
