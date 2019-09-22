@@ -55,6 +55,12 @@ header .menu  li a{
     transition: 0.2s;
     padding: 4px 0;
 }
+
+.menu .active {
+    border-bottom: 3px solid #ab39c4;
+    opacity: 1;
+}
+
 header .menu  li a:hover{
     border-bottom: 3px solid #ab39c4;
     opacity: 1;
