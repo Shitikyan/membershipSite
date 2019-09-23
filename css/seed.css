@@ -60,17 +60,6 @@ main .seed-wrapper .content .cover{
 main .seed-wrapper .content .cover img{
     width: 100%;
 }
-main .seed-wrapper .content .but-container{
-    padding: 50px 0;
-}
-main .seed-wrapper .content .but-container a{
-    color: #DE46F9;
-    text-decoration: none;
-    border: 1px solid #DE46F9;
-    padding: 10px 20px;
-    font-size: 26px;
-    box-shadow: 0px 0px 15px #DE46F9;
-}
 .policies .main-content{
     padding: 20px 0px;
 }

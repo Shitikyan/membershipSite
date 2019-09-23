@@ -85,16 +85,18 @@ header .lang .white-paper a {
 }
 
 header .lang .kyc-white a {
-    color: #3f4e9c;
-    border: 1px solid #3f4e9c;
+    color: #7D2393;
+    border: 1px solid #7D2393;
+}
+
+header .lang .kyc-white:hover a {
+    color: white;
+    border: 1px solid white;
+    background-color: #7D2393;
 }
 
 header .lang .white-paper a:hover {
     box-shadow: 1px 1px 7px 2px rgba(255, 255, 255, 0.4);
-}
-
-header .lang .kyc-white a:hover {
-    box-shadow: 1px 1px 7px 2px rgba(0, 0, 0, 0.4);
 }
 
 header .lang select {
@@ -112,7 +114,7 @@ header .lang select option {
 
 main {
     margin-top: 120px;
-    background: linear-gradient(#003BE2, #00B1E0, #003BE2);
+    background-color: #3F43EC;
     min-height: 100vh;
 }
 
@@ -121,6 +123,10 @@ main .canc {
     background-repeat: repeat-y;
     background-position: top;
     background-size: 100% auto;
+}
+
+.main-cover {
+    background: linear-gradient(186deg, rgba(155, 36, 226, 0.9) 15%, rgba(155, 36, 226, 0.5) 28%, rgba(155, 36, 226, 0));
 }
 
 main .main-cover .home {
@@ -318,25 +324,26 @@ main .footer .airdrops-img:hover {
     font-size: 12px;
 }
 
-.light-blue {
-    color: #27d1f5;
-}
-
-.text-pink {
-    color: #d649ff;
-}
-
-.white {
-    color: white;
-}
-
-main .baunties-container {
-    height: 800px;
-}
-
 main .roadmap-container {
     height: 800px;
 }
-.gold{
-    color: #e3cb8e;
+
+.but-container {
+    padding: 50px 0;
+}
+
+.but-container a {
+    color: #DE46F9;
+    text-decoration: none;
+    border: 1px solid #DE46F9;
+    padding: 10px 20px;
+    font-size: 26px;
+    box-shadow: 0px 0px 10px #DE46F9;
+}
+
+.but-container a:hover{
+    color: white;
+    border: 1px solid white;
+    box-shadow: 0px 0px 10px white;
+    background-color: #DE46F9;
 }

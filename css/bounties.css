@@ -1,0 +1,49 @@
+.baunties-container .container {
+    padding-bottom: 0;
+}
+
+.baunties-container .light-blue {
+    color: #02F1FD;
+}
+
+.baunties-container .context {
+    padding: 50px 90px 0;
+    color: white;
+}
+
+.baunties-container .title,
+.baunties-container table th:first-child,
+.baunties-container table {
+    font-size: 20px;
+}
+
+.baunties-container .languages,
+.baunties-container table th {
+    font-size: 15px;
+}
+
+.baunties-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.baunties-container table th {
+    padding: 5px 0px;
+    text-align: left;
+    vertical-align: bottom;
+    font-weight: 100
+}
+
+.baunties-container table tr:not(:last-child),
+.baunties-container .languages {
+    border-bottom: 1px solid white;
+}
+
+.baunties-container table th:first-child {
+    width: 400px;
+    vertical-align: top;
+}
+
+.baunties-container .but-container {
+    padding: 25px 0px;
+}
