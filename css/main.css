@@ -101,3 +101,45 @@
 .ft-22{
     font-size: 22px;
 }
+
+.ft-65 {
+    font-size: 65px;
+}
+
+.ft-37 {
+    font-size: 37px;
+}
+
+.left-half,
+.right-half {
+    width: 50%;
+}
+
+.left-half,
+.right-half,
+.left-half-35,
+.right-half-65 {
+    height: 100%;
+}
+
+.left-half,
+.left-half-35  {
+    float: left;
+}
+
+.right-half,
+.right-half-65 {
+    float: right;
+}
+
+.left-half-35 {
+    width: 35%;
+}
+
+.right-half-65 {
+    width: 65%;
+}
+
+.center{
+    margin:0 auto;
+}
