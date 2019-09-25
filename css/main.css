@@ -154,7 +154,7 @@
     height: 100%;
 }
 
-.left-half,
+/* .left-half,
 .left-half-35 {
     float: left;
 }
@@ -162,7 +162,7 @@
 .right-half,
 .right-half-65 {
     float: right;
-}
+} */
 
 .left-half-35 {
     width: 35%;

@@ -171,7 +171,7 @@ main .main-cover .cover-footer .video-content {
 
 main .main-cover .cover-footer .link {
     padding: 10px;
-    background-color: #5b33ce;
+    background-color: rgba(91,51,206, 0.7);
     margin-right: 35px;
     margin-bottom: 230px;
     color: white;
@@ -271,15 +271,19 @@ main .footer .airdrops-img:hover {
     top: 150px;
     right: 0;
     color: white;
+    
+}
+.main-timer .timer .wrapper{
+    box-shadow: 0px 0px 50px 10px rgb(173,59,232);
 }
 
 .timer .wrapper {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(0,0,0, 0.08);
     padding: 20px 30px;
 }
 
 .timer .footer {
-    background-color: rgba(17, 44, 101, 0.3);
+    background-color: rgba(173,59,232,0.5);
     padding: 2px;
     font-size: 50px;
     text-align: center;
@@ -308,14 +312,14 @@ main .footer .airdrops-img:hover {
     font-size: 40px;
     border-bottom: 1px solid white;
     margin-bottom: 6px;
-    color: #EA07C2;
+    color: white;
     font-weight: 800;
-    text-shadow: 0px 0px 25px white;
+    text-shadow: 0px 0px 5px rgb(173,59,232);
 }
 
 .timer .wrapper .content .dot {
     font-size: 40px;
-    color: #EA07C2;
+    color: white;
     font-weight: 800;
 }
 

@@ -23,6 +23,11 @@
     height: 310.47px;
 }
 
+.lamborghini img,
+.tesla img{
+    height: 100%;
+}
+
 .unprecedented-airdrops-container section{
     margin-bottom: 20px;
 }
@@ -34,7 +39,9 @@
 .home-2{
     height: 476.97px;
 }
-
+.home-2 img{
+    height: 100%;
+}
 .tesla .content,
 .lamborghini .content,
 .home-2 .content{
