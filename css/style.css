@@ -32,7 +32,7 @@ header .logo {
 }
 
 header .menu {
-    max-width: 1100px;
+    max-width: 1174px;
     flex-grow: 1;
 }
 
@@ -138,7 +138,7 @@ main .main-cover .home {
 
 .container {
     height: 100%;
-    width: 1100px;
+    width: 1174px;
     margin: 0 auto;
     padding: 40px 0;
 }
@@ -332,10 +332,6 @@ main .footer .airdrops-img:hover {
 .timer .wrapper .content .item {
     min-width: 50px;
     font-size: 12px;
-}
-
-main .roadmap-container {
-    height: 800px;
 }
 
 .but-container {
