@@ -82,22 +82,34 @@
     margin-left: 15px;
 }
 
-.mr-10{
+.mr-10 {
     margin-right: 10px;
 }
 
-.w300{
+.w300 {
     width: 300px;
 }
 
-.wp100{
+.wp20 {
+    width: 20%;
+}
+
+.wp58 {
+    width: 58%;
+}
+
+.wp80 {
+    width: 80%;
+}
+
+.wp100 {
     width: 100%;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
-.ft-22{
+.ft-22 {
     font-size: 22px;
 }

@@ -37,7 +37,7 @@ header .menu {
 
 header .menu li {
     list-style-type: none;
-    margin: 0 10px;
+    margin: 0 0 0 40px
 }
 
 header .menu li a::before {
@@ -263,7 +263,6 @@ main .footer .airdrops-img {
 main .footer .airdrops-img:hover {
     background-image: url(../assets/images/airdrops_hover.png);
 }
-
 
 .timer {
     width: 360px;
