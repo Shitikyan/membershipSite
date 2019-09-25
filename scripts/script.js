@@ -1,10 +1,9 @@
-var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
-let nums = document.querySelectorAll(".timer .num");
+var date = "Jan 5, 2021 15:37:25";
+var countDownDate = new Date(date).getTime();
+var nums = document.querySelectorAll(".timer .num");
 
-var x = setInterval(function() {
-
+var x = setInterval(function () {
   var now = new Date().getTime();
-
   var distance = countDownDate - now;
 
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -12,10 +11,10 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    nums[0].innerHTML = days;
-    nums[1].innerHTML = hours;
-    nums[2].innerHTML = minutes;
-    nums[3].innerHTML = seconds;
+  nums[0].innerHTML = days;
+  nums[1].innerHTML = hours;
+  nums[2].innerHTML = minutes;
+  nums[3].innerHTML = seconds;
 
 
   if (distance < 0) {
@@ -25,18 +24,17 @@ var x = setInterval(function() {
 }, 1000);
 
 
-
-
 // PROGRESS
 
-let min = 0;
-let max = 2000000;
-let value = 650000;
+var min = 0;
+var max = 2000000;
+var value = 650000;
+var percent = document.querySelector('.progress .percent');
+var pointerNum = document.querySelector('.progress-wrapper .pointer .num');
+var pointer = document.querySelector('.progress-wrapper .pointer');
 
-let percent = document.querySelector('.progress .percent');
-let pointer = document.querySelector('.progress-wrapper .pointer');
-let pointerNum = document.querySelector('.progress-wrapper .pointer .num');
-
-pointerNum.innerText = value.toLocaleString();
-percent.style.width = (value / max) * 100 + '%';
-pointer.style.left = `calc(${(value / max) * 100}% - 75px)`;
+if (percent && pointerNum && pointer) {
+  pointerNum.innerText = value.toLocaleString();
+  percent.style.width = (value / max) * 100 + '%';
+  pointer.style.left = `calc(${(value / max) * 100}% - 75px)`;
+}

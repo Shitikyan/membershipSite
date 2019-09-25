@@ -71,32 +71,23 @@ header .menu li.active {
     border-bottom: 3px solid #ab39c4;
 }
 
-header .lang .but a {
+header .but a {
     padding: 4px 5px;
-
     border-radius: 3px;
     text-decoration: none;
-    margin-right: 50px;
     font-weight: 700;
 }
 
-header .lang .white-paper a {
+.white-bordered a {
     color: white;
     border: 1px solid white;
 }
 
-header .lang .kyc-white a {
-    color: #7D2393;
-    border: 1px solid #7D2393;
+.whitepaper a {
+    margin-right: 40px;
 }
 
-header .lang .kyc-white:hover a {
-    color: white;
-    border: 1px solid white;
-    background-color: #7D2393;
-}
-
-header .lang .white-paper a:hover {
+.white-bordered a:hover {
     box-shadow: 1px 1px 7px 2px rgba(255, 255, 255, 0.4);
 }
 
