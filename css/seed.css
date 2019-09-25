@@ -73,3 +73,61 @@ main .seed-wrapper .content .cover img{
 #main-timer{
     display: none;
 }
+
+
+.progress-wrapper{
+    padding-top: 70px; 
+    position: relative;
+}
+.progress-wrapper .progress-content{
+    width: 100%;
+}
+.progress-wrapper .progress{
+    height: 30px;
+    border: 1px solid white;
+    margin-top: 5px;
+    background-color: rgba(141,23,233,0.9);
+    width: 100%;
+    position: relative;
+}
+.progress-wrapper .progress .percent{
+    height: 28px;
+    background-color: rgb(81,11,229);
+    position: absolute;
+}
+.progress-wrapper .progress .lines{
+    position: absolute;
+    height: 28px;
+    width: 100%;
+}
+.progress-wrapper .progress .lines>div{
+    border: 1px solid white;
+    height: 100%;
+    width: 100%;
+}
+.progress-wrapper .pointer{
+    /* width: 80px; */
+    height: 50px;
+    background-color: rgb(123,105,184);
+    position: absolute;
+    top: 28px;
+    display: inline-block;
+    width: 150px;
+}
+.progress-wrapper .pointer .num{
+    font-size: 28px;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+.progress-wrapper .pointer .arrow{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(123,105,184);  
+    position: absolute;
+    top: 18px;
+    transform: rotate(45deg);
+    left: calc(50% - 20px);  
+    z-index: 1;
+}

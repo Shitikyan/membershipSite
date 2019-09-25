@@ -34,6 +34,10 @@
     align-items: flex-end;
 }
 
+.grid-al-stretch{
+    align-items: stretch;
+}
+
 .grid-dir-column {
     flex-direction: column;
 }
