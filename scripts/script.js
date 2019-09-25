@@ -23,3 +23,20 @@ var x = setInterval(function() {
     // document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+
+
+
+// PROGRESS
+
+let min = 0;
+let max = 2000000;
+let value = 650000;
+
+let percent = document.querySelector('.progress .percent');
+let pointer = document.querySelector('.progress-wrapper .pointer');
+let pointerNum = document.querySelector('.progress-wrapper .pointer .num');
+
+pointerNum.innerText = value.toLocaleString();
+percent.style.width = (value / max) * 100 + '%';
+pointer.style.left = `calc(${(value / max) * 100}% - 75px)`;
