@@ -74,6 +74,10 @@
     padding-bottom: 40px;
 }
 
+.pb-100{
+    padding-bottom: 100px;
+}
+
 .mt-20 {
     margin-top: 20px;
 }
@@ -134,12 +138,24 @@
     font-size: 22px;
 }
 
-.ft-65 {
-    font-size: 65px;
+.ft-27{
+    font-size: 27px;
 }
 
 .ft-37 {
     font-size: 37px;
+}
+
+.ft-40{
+    font-size: 40px;
+}
+
+.ft-65 {
+    font-size: 65px;
+}
+
+.ft-73{
+    font-size: 73px;
 }
 
 .left-half,
@@ -174,4 +190,8 @@
 
 .center {
     margin: 0 auto;
+}
+
+.bold{
+    font-weight: bold;
 }
