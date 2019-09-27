@@ -17,7 +17,7 @@ header {
     border-bottom: 6px solid #B186ED;
     position: fixed;
     width: 100%;
-    height: 120px;
+    /* height: 120px; */
     top: 0;
     z-index: 10;
 }
@@ -32,7 +32,7 @@ header .logo {
 }
 
 header .menu {
-    max-width: 1174px;
+    /* max-width: 1174px; */
     flex-grow: 1;
 }
 
@@ -82,7 +82,9 @@ header .but a {
     color: white;
     border: 1px solid white;
 }
-
+.whitelisting{
+    margin: 0 20px;
+}
 .whitepaper a {
     margin-right: 40px;
 }
@@ -105,7 +107,7 @@ header .lang select option {
 }
 
 main {
-    margin-top: 120px;
+    margin-top: 116px;
     background: linear-gradient(#5927d1, #3b45ee, #5927d1);
     min-height: 100vh;
 }
@@ -353,4 +355,30 @@ hr.after-title {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(255,255, 255, 0), rgba(255,255, 255, 0.75), rgba(255,255, 255, 0));
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1500px){
+    .timer {
+        right: -343px;
+        width: 380px;
+        transition: 0.4s;
+    }
+    .timer-res{
+        flex-grow: 1;
+        width: 450px;
+        height: 140px;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .timer:hover{
+        right: 0;
+    }
 }

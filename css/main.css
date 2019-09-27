@@ -195,3 +195,13 @@
 .bold{
     font-weight: bold;
 }
+
+
+
+
+
+@media(max-width: 1500px){
+    .grid-jus-center-res{
+        justify-content: center !important;
+    }
+}
