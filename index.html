@@ -15,8 +15,13 @@
 
 <body>
     <header class="header">
-        <div class="grid grid-jus-between grid-al-center grid-jus-center-res grid-wrap">
-            <div class="logo"></div>
+        <div class="grid grid-jus-between grid-al-end grid-jus-center-res grid-wrap">
+            <a href="">
+                <div class="logo grid grid-al-end">
+                    <div class="img"></div>
+                    <div class="text">BlockMembers</div>
+                </div>
+            </a>
             <div class="grid grid-jus-between">
                 <nav class="menu-container grid-jus-between grid-al-start">
                     <ul class="menu grid grid-jus-between">
@@ -24,7 +29,10 @@
                             <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a href="#">REWARDS</a>
+                            <a href="#">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="#">AIRDROPS</a>
                         </li>
                         <li>
                             <a href="#">BOUNTIES</a>
@@ -33,26 +41,24 @@
                             <a href="#">ROADMAP</a>
                         </li>
                         <li>
-                            <a href="#">FAQ</a>
-                        </li>
-                        <li>
                             <a href="#">TEAM</a>
                         </li>
-                        <li>
-                            <a href="#">CONTACTS</a>
-                        </li>
-                        <li data-content="seed">
+                        <!-- <li data-content="seed">
                             <a href="#">SEED</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </nav>
-                <div class="whitelisting white-bordered but grid-jus-end">
-                    <a href="#">WHITELISTING</a>
-                </div>
+                
             </div>
             <div class="lang grid grid-al-center grid-jus-center">
                 <div class="whitepaper white-bordered but">
                     <a href="#">White paper</a>
+                </div>
+                <div class="sign sign-in but">
+                    <a href="#">SIGN IN</a>
+                </div>
+                <div class="sign sign-up but">
+                    <a href="#">SIGN UP</a>
                 </div>
                 <select>
                     <option value="">EN</option>
@@ -75,24 +81,25 @@
                                 <img src="./assets/images/cover_img.png" alt="">
                             </div>
                         </div>
-                        <div class="cover-footer">
+                        <div class="cover-footer grid grid-jus-end">
                             <div class="grid grid-jus-end">
-                                <a class="link" href="#">
-                                    <div class="grid grid-al-center">
+                                <a class="link industry" href="#">
+                                    <div class=" grid grid-al-center">
                                         <div class="text-center ml-15 mr-10">
-                                            <p>
-                                                VISIT
-                                            </p>
-                                            <p>
-                                                INDUSTRY SITE
-                                            </p>
+                                            <span>VISIT</span>
+                                            <span class="bold">INDUSTRY SITE</span>
                                         </div>
                                         <img src="./assets/images/home_icon.png">
                                     </div>
                                 </a>
                             </div>
-                            <div class="video-content grid grid-jus-center grid-al-center">
-                                ►
+                            <div class="grid grid-jus-end">
+                                <a class="link presentation grid grid-al-center" href="#">
+                                    <div class=" grid grid-al-center">
+                                        <span class="right">►</span>
+                                        <span>PRESENTATION</span>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -444,9 +451,13 @@
 
     <div class="main-timer">
         <section class="timer grid">
-                <div class="timer-res">
-
-                    </div>
+            <div class="timer-res grid grid-al-center">
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
             <div class="wrapper">
                 <div class="title">SEED MEMBERSHIP RELEASE ENDS IN:</div>
                 <div class="content grid grid-jus-between">
@@ -475,6 +486,16 @@
                 <a href="#"><img src="./assets/images/right.png" alt=""></a>
             </div>
         </section>
+    </div>
+
+    <div class="loading">
+        <div class="loading-wrapper">
+            <div class="canc grid grid-al-center grid-jus-center">
+                <div class="content">
+                    <img src="./assets/images/seed_cover.png" alt="">
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

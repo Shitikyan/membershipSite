@@ -200,7 +200,7 @@
 
 
 
-@media(max-width: 1500px){
+@media(max-width: 1200px){
     .grid-jus-center-res{
         justify-content: center !important;
     }

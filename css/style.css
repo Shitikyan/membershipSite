@@ -9,11 +9,12 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 header {
-    background: -webkit-linear-gradient(left, #B186ED, #DED0F9, #B186ED);
-    padding: 15px 20px;
+    background: -webkit-linear-gradient(left, rgba(178,135,237,0.9), rgba(222,208,249,0.9), rgba(178,135,237,0.9));
+    padding: 35px 30px 20px 30px;
     border-bottom: 6px solid #B186ED;
     position: fixed;
     width: 100%;
@@ -22,13 +23,21 @@ header {
     z-index: 10;
 }
 
-header .logo {
-    width: 200px;
-    height: 80px;
+header .logo .img {
+    width: 130px;
+    height: 50px;
     background-image: url(../assets/images/logo.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+}
+header  .logo .text{
+    color: white;
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    left: -22px;
 }
 
 header .menu {
@@ -38,7 +47,7 @@ header .menu {
 
 header .menu li {
     list-style-type: none;
-    margin: 0 0 0 40px
+    margin: 0 15px;
 }
 
 header .menu li a::before {
@@ -54,7 +63,7 @@ header .menu li a::before {
 
 header .menu li a {
     text-decoration: none;
-    font-size: 15px;
+    font-size: 12px;
     color: #3f4e9c;
     font-weight: 700;
     text-transform: uppercase;
@@ -82,11 +91,22 @@ header .but a {
     color: white;
     border: 1px solid white;
 }
-.whitelisting{
-    margin: 0 20px;
+.sign a{
+    color: white;
+    font-size: 13px;
+}
+.sign{
+    margin: 0 5px;
+}
+.sign-up{
+    background-color: rgb(144,61,169);
+    padding: 5px 3px;
 }
 .whitepaper a {
-    margin-right: 40px;
+    margin-right: 30px;
+    padding: 3px 10px !important;
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
 .white-bordered a:hover {
@@ -100,6 +120,7 @@ header .lang select {
     color: white;
     border-left: 1px solid white;
     padding-left: 5px;
+    margin-left: 30px;
 }
 
 header .lang select option {
@@ -107,7 +128,7 @@ header .lang select option {
 }
 
 main {
-    margin-top: 116px;
+    margin-top: 110px;
     background: linear-gradient(#5927d1, #3b45ee, #5927d1);
     min-height: 100vh;
 }
@@ -129,6 +150,7 @@ main .main-cover .home {
     background-repeat: no-repeat;
 }
 
+
 .container {
     height: 100%;
     width: 1174px;
@@ -145,7 +167,7 @@ main .main-cover .container {
     background-color: rgba(255, 255, 255, 0.20);
     padding-top: 40px;
     padding-bottom: 0;
-    height: 1004px;
+    height: 60vw;
 }
 
 main .main-cover .container .cover-text .text {
@@ -162,27 +184,33 @@ main .main-cover .container .cover-text .text .blue {
     color: #3c5a96;
 }
 
-main .main-cover .cover-footer .video-content {
-    width: 650px;
-    height: 350px;
-    box-shadow: 0px 0px 20px white;
-    color: white;
-    font-size: 40px;
-    background-color: rgba(0, 0, 0, 0.1);
+main .main-cover .cover-footer{
+    padding: 70px 40px;
 }
-
 main .main-cover .cover-footer .link {
-    padding: 10px;
-    background-color: rgba(91,51,206, 0.7);
-    margin-right: 35px;
-    margin-bottom: 230px;
+    padding: 5px 10px;
     color: white;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
+    border: 1px solid white;
+    margin: 0 20px;
+}
+main .main-cover .cover-footer .presentation{
+    color: rgb(31,215,246);
+}
+main .main-cover .cover-footer .presentation:hover{
+    background-color: rgba(6,96,252, 0.6);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
+    color: white;
 }
 
 main .main-cover .cover-footer .link img {
+    width: 28px;
     margin: 0 10px;
+}
+main .main-cover .cover-footer .link .right{
+    font-size: 20px;
+    margin-right: 10px;
 }
 
 main .container {
@@ -192,7 +220,7 @@ main .container {
 main .head .title {
 
     padding: 0 30px;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     font-size: 30px;
     text-align: center;
     text-shadow: 0px 0px 4px #27d1f5;
@@ -267,13 +295,31 @@ main .footer .airdrops-img:hover {
 }
 
 .timer {
-    width: 360px;
+    width: 380px;
     position: fixed;
     z-index: 10;
-    top: 150px;
+    top: calc(100vh / 6);
     right: 0;
     color: white;
-    
+    right: -344px;
+    transition: 0.4s;
+}
+.timer-res{
+    flex-grow: 1;
+    width: 450px;
+    height: 140px;
+    background-color: rgba(255,255,255,0.8);
+}
+.hamburger{
+    width: 100%;
+}
+.hamburger>div{
+    margin: 5px;
+    background-color: #8C33A0;
+    height: 3px;
+}
+.timer:hover{
+    right: 0;
 }
 .main-timer .timer .wrapper{
     box-shadow: 0px 0px 50px 10px rgb(173,59,232);
@@ -357,28 +403,71 @@ hr.after-title {
     background-image: linear-gradient(to right, rgba(255,255, 255, 0), rgba(255,255, 255, 0.75), rgba(255,255, 255, 0));
 }
 
-
-
-
-
-
-
-
-
-
-@media(max-width: 1500px){
-    .timer {
-        right: -343px;
-        width: 380px;
-        transition: 0.4s;
-    }
-    .timer-res{
-        flex-grow: 1;
-        width: 450px;
-        height: 140px;
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-    .timer:hover{
-        right: 0;
+.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    animation-name: loadingg;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes loadingg{
+    to{
+        visibility: hidden;
     }
 }
+
+.loading-wrapper{
+    width: 100vw;
+    height: 100vh;
+    
+    background-color: rgb(103,33,212);
+    animation-name: loadingWrapper;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+@keyframes loadingWrapper{
+    to{
+        opacity: 0;
+    }
+}
+.loading-wrapper .canc{
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/images/canc.png);
+}
+.loading-wrapper .content img{
+    animation-name: loadingContent;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    width: 900px;   
+}
+@keyframes loadingContent{
+    to{
+        width: 150px;
+        transform: translate(-46vw, -46vh);
+        opacity: 0;
+    }
+}
+/* ::-webkit-scrollbar{
+    display: none;
+} */
+
+
+
+
+
+
+
+/* @media(max-width: 1500px){
+    
+    header .lang{
+        margin-top: 15px;
+    }
+    header .menu{
+        margin-top: 15px;
+    }
+} */
