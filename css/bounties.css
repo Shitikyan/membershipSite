@@ -40,10 +40,32 @@
 }
 
 .baunties-container table th:first-child {
-    width: 400px;
+    width: 360px;
     vertical-align: top;
 }
 
 .baunties-container .but-container {
-    padding: 25px 0px;
+    padding: 25px 0px 180px 0 ;
+}
+
+.baunties-container .logos {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 250;
+    text-shadow: 0 0 white;
+    padding: 10px 0 25px 0;
+}
+
+.baunties-container .logos .logo-background {
+    padding: 10px 0;
+    background-image: url(../assets/images/logos-background.png);
+}
+
+.baunties-container .vpn-logos,
+.baunties-container .vpn-logos .vpn-logo {
+    padding: 10px 0 0 0;
+}
+
+.baunties-container .head{
+    padding-top: 40px;
 }

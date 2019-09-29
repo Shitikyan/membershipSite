@@ -249,12 +249,10 @@ main .membership-container .container {
 }
 
 main .context .item {
-    padding: 10px 0 10px 90px;
+    padding: 0 0 0 90px;
     margin: 10px 0;
     color: white;
-    font-size: 18px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-
+    font-size: 25px;
 }
 
 main .context .item:nth-child(even) {
@@ -268,7 +266,7 @@ main .context .context-title {
     padding: 10px 0 10px 90px;
     margin: 10px 0;
     color: white;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 main .context .sub-item {
@@ -397,7 +395,6 @@ main .footer .airdrops-img:hover {
 }
 
 hr.after-title {
-    width: 400px;
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(255,255, 255, 0), rgba(255,255, 255, 0.75), rgba(255,255, 255, 0));
@@ -452,22 +449,3 @@ hr.after-title {
         opacity: 0;
     }
 }
-/* ::-webkit-scrollbar{
-    display: none;
-} */
-
-
-
-
-
-
-
-/* @media(max-width: 1500px){
-    
-    header .lang{
-        margin-top: 15px;
-    }
-    header .menu{
-        margin-top: 15px;
-    }
-} */
