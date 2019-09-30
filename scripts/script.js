@@ -38,3 +38,13 @@ if (percent && pointerNum && pointer) {
   percent.style.width = (value / max) * 100 + '%';
   pointer.style.left = `calc(${(value / max) * 100}% - 75px)`;
 }
+
+var timer = document.querySelector('.timer');
+timer.addEventListener("mouseover", function(e){
+  timer.style.right = 0;
+});
+
+var timerHamburgerButton = document.querySelector('.timer-res');
+timerHamburgerButton.addEventListener("click", function(e){
+  timer.style.right = "-344px";
+});

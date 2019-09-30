@@ -13,7 +13,7 @@
 }
 
 header {
-    background: -webkit-linear-gradient(left, rgba(178,135,237,0.9), rgba(222,208,249,0.9), rgba(178,135,237,0.9));
+    background: -webkit-linear-gradient(left, rgba(178,135,237,0.99), rgba(222,208,249,0.9), rgba(178,135,237,0.9));
     padding: 35px 30px 20px 30px;
     border-bottom: 6px solid #B186ED;
     position: fixed;
@@ -24,9 +24,9 @@ header {
 }
 
 header .logo .img {
-    width: 130px;
-    height: 50px;
-    background-image: url(../assets/images/logo.png);
+    width: 260px;
+    height: 54px;
+    background-image: url(../assets/images/Blockmembers_Logo.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -47,7 +47,7 @@ header .menu {
 
 header .menu li {
     list-style-type: none;
-    margin: 0 15px;
+    margin: 0 22px;
 }
 
 header .menu li a::before {
@@ -110,6 +110,8 @@ header .but a {
 }
 
 .white-bordered a:hover {
+    background: white;
+    color: #952198;
     box-shadow: 1px 1px 7px 2px rgba(255, 255, 255, 0.4);
 }
 
@@ -117,8 +119,7 @@ header .lang select {
     border: none;
     outline: none;
     background-color: transparent;
-    color: white;
-    border-left: 1px solid white;
+    color: #952198;
     padding-left: 5px;
     margin-left: 30px;
 }
@@ -141,7 +142,7 @@ main .canc {
 }
 
 .main-cover {
-    background: linear-gradient(186deg, rgba(155, 36, 226, 0.9) 15%, rgba(155, 36, 226, 0.5) 28%, rgba(155, 36, 226, 0));
+    background: linear-gradient(186deg, rgba(155, 36, 226, 0.45) 20%, rgba(155, 36, 226, 0.5) 28%, rgba(155, 36, 226, 0));
 }
 
 main .main-cover .home {
@@ -153,9 +154,15 @@ main .main-cover .home {
 
 .container {
     height: 100%;
-    width: 1174px;
+    width: 75%;
     margin: 0 auto;
     padding: 40px 0;
+}
+
+.home-container {
+    position: relative;
+    width: 87.5%;;
+    margin: 0 !important;
 }
 
 .divider {
@@ -194,6 +201,10 @@ main .main-cover .cover-footer .link {
     font-size: 12px;
     border: 1px solid white;
     margin: 0 20px;
+}
+main .main-cover .cover-footer .link:hover{
+    color: #6634ca;
+    background-color:#d4cdf6;
 }
 main .main-cover .cover-footer .presentation{
     color: rgb(31,215,246);
@@ -315,9 +326,6 @@ main .footer .airdrops-img:hover {
     margin: 5px;
     background-color: #8C33A0;
     height: 3px;
-}
-.timer:hover{
-    right: 0;
 }
 .main-timer .timer .wrapper{
     box-shadow: 0px 0px 50px 10px rgb(173,59,232);
@@ -448,4 +456,35 @@ hr.after-title {
         transform: translate(-46vw, -46vh);
         opacity: 0;
     }
+}
+
+.cover-logo {
+    margin-top:15px;
+}   
+
+.whitelisting a {
+    border:2px solid white;
+    width: 178px;
+    padding: 3px 10px !important;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-right: 48px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.homing-header{
+    color:#ba3eed;
+    font-weight: 100;
+    text-align: center;
+    font-size: 35px;
+    margin-left: 140px  !important;
+}
+
+hr.after-header {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255,255, 255, 0), #ba3eed, rgba(255,255, 255, 0));
 }

@@ -19,7 +19,6 @@
             <a href="">
                 <div class="logo grid grid-al-end">
                     <div class="img"></div>
-                    <div class="text">BlockMembers</div>
                 </div>
             </a>
             <div class="grid grid-jus-between">
@@ -63,7 +62,7 @@
                 <select>
                     <option value="">EN</option>
                     <option value="">RU</option>
-                </select>
+                </select>f
             </div>
         </div>
     </header>
@@ -72,24 +71,30 @@
         <div class="canc">
             <section class="main-cover">
                 <div class="home">
-                    <div class="container grid grid-dir-column grid-jus-between">
+                    <div class="home-container container grid grid-dir-column grid-jus-between">
                         <div class="cover-text">
                             <div class="text grid grid-dir-column">
-                                <p> </p>
+                                <p class="homing-header">HOMING THE UNHOMED</p>
+                                <hr class="after-header">
                             </div>
                             <div class="grid grid-dir-column grid-al-end cover-logo">
-                                <img src="./assets/images/cover_img.png" alt="">
+                                <img src="./assets/images/MP200X.png" alt="">
+                                <div class="whitelisting white-bordered but">
+                                    <a href="#">WHITELISTING</a>
+                                </div>
                             </div>
                         </div>
                         <div class="cover-footer grid grid-jus-end">
                             <div class="grid grid-jus-end">
-                                <a class="link industry" href="#">
+                                <a class="link" href="#"
+                                    onmouseover="document.getElementById('visitImg').src='./assets/images/Hicon.png'"
+                                    onmouseout="document.getElementById('visitImg').src='./assets/images/home_icon.png'">
                                     <div class=" grid grid-al-center">
                                         <div class="text-center ml-15 mr-10">
                                             <span>VISIT</span>
                                             <span class="bold">INDUSTRY SITE</span>
                                         </div>
-                                        <img src="./assets/images/home_icon.png">
+                                        <img id="visitImg" src="./assets/images/home_icon.png">
                                     </div>
                                 </a>
                             </div>
@@ -376,11 +381,15 @@
 
                                     <div class="vpn-logos">
                                         <div class="vpn-logo grid grid-jus-center">
-                                            <img src="./assets/images/expressvpn-logo.png">
+                                            <a href="https://www.expressvpn.com/">
+                                                <img src="./assets/images/expressvpn-logo.png">
+                                            </a>
                                         </div>
 
                                         <div class="vpn-logo grid grid-jus-center">
-                                            <img src="./assets/images/nordvpn-logo.png">
+                                            <a href="https://nordvpn.com">
+                                                <img src="./assets/images/nordvpn-logo.png">
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -392,7 +401,9 @@
 
                                     <div class="vpn-logos">
                                         <div class="vpn-logo grid grid-jus-center">
-                                            <img src="./assets/images/ledger-logo.png">
+                                            <a href="https://www.ledger.com">
+                                                <img src="./assets/images/ledger-logo.png">
+                                            </a>
                                         </div>
 
                                     </div>
