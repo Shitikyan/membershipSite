@@ -58,7 +58,7 @@
 
 .baunties-container .logos .logo-background {
     padding: 10px 0;
-    background-image: url(../assets/images/logos-background.png);
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.15), transparent)
 }
 
 .baunties-container .vpn-logos,

@@ -142,12 +142,14 @@ main .canc {
 }
 
 .main-cover {
-    background: linear-gradient(186deg, rgba(155, 36, 226, 0.45) 20%, rgba(155, 36, 226, 0.5) 28%, rgba(155, 36, 226, 0));
+    /* background: linear-gradient(186deg, rgba(155, 36, 226, 0.45) 20%, rgba(155, 36, 226, 0.5) 28%, rgba(155, 36, 226, 0)); */
+    background: linear-gradient(186deg, rgba(255, 0, 188, 0.3) 20%, rgba(255, 0, 200, 0.2) 28%, transparent);
+
 }
 
 main .main-cover .home {
     background-image: url(../assets/images/home.png);
-    background-size: 100% auto;
+    background-size: 83% auto;
     background-repeat: no-repeat;
 }
 
@@ -170,11 +172,40 @@ main .main-cover .home {
     border-top: 1px solid white;
 }
 
+.home .bonus-pool a{
+    color: #00E8FD;
+    
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 100px;
+}
+.home .bonus-pool a:hover{
+    border: 1px solid #00E8FD;
+}
+.home .cover-logo{
+    /* perspective: 1000px; */
+}
+.home .mp-img{
+    transition: 0.5s;   
+    width: 300px;
+    margin-bottom: 30px;
+    /* transform: rotateY(-40deg) ; */
+    transform: perspective(900px) rotate3d(0,30,0,-45deg);
+
+}
+.home .mp-img:hover{
+    /* transform: rotateY(0deg) ; */
+    transform: perspective(900px) rotate3d(0,0,0,0deg);
+
+}
+
 main .main-cover .container {
     background-color: rgba(255, 255, 255, 0.20);
     padding-top: 40px;
     padding-bottom: 0;
-    height: 60vw;
+    height: 52vw;
 }
 
 main .main-cover .container .cover-text .text {
@@ -222,6 +253,17 @@ main .main-cover .cover-footer .link img {
 main .main-cover .cover-footer .link .right{
     font-size: 20px;
     margin-right: 10px;
+}
+
+main .main-cover .cover-footer .visit .img{
+    width: 30px;
+    height: 30px;
+    background-image: url(../assets/images/home_icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+main .main-cover .cover-footer .visit:hover .img{
+    background-image: url(../assets/images/Hicon.png);
 }
 
 main .container {
@@ -328,11 +370,11 @@ main .footer .airdrops-img:hover {
     height: 3px;
 }
 .main-timer .timer .wrapper{
-    box-shadow: 0px 0px 50px 10px rgb(173,59,232);
+    box-shadow: 0px 0px 20px 3px rgb(255,255,255);
 }
 
 .timer .wrapper {
-    background-color: rgba(0,0,0, 0.08);
+    background-color: rgba(128,8,214, 0.8);
     padding: 20px 30px;
 }
 
@@ -368,7 +410,18 @@ main .footer .airdrops-img:hover {
     margin-bottom: 6px;
     color: white;
     font-weight: 800;
-    text-shadow: 0px 0px 5px rgb(173,59,232);
+     text-shadow: 2px 0 0 black, 
+                -2px 0 0 black,
+                 0 2px 0 black, 
+                 0 -2px 0 black, 
+                 1px 1px black, 
+                 -1px -1px 0 black, 
+                 1px -1px 0 black, 
+                 -1px 1px 0 black, 
+                 10px 10px 30px white, 
+                 -10px -10px 30px white, 
+                 10px -10px 30px white, 
+                 -10px 10px 30px white; 
 }
 
 .timer .wrapper .content .dot {
@@ -476,7 +529,7 @@ hr.after-title {
 }
 
 .homing-header{
-    color:#ba3eed;
+    color:#D749F1;
     font-weight: 100;
     text-align: center;
     font-size: 35px;
@@ -485,6 +538,8 @@ hr.after-title {
 
 hr.after-header {
     border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(255,255, 255, 0), #ba3eed, rgba(255,255, 255, 0));
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #D749F1 70%, transparent );
+    width: 50%;
+    margin: 0 auto;
 }
